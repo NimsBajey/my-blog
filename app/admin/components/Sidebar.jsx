@@ -28,7 +28,7 @@ export default function Sidebar() {
         <ul className='w-full flex flex-col gap-6'>
             {link.map((item) => {
                 return <Link href={item.link}>
-                    <li className='flex gap-3 font-bold items-center bg-blue-50 rounded-full px-5 py-2'>
+                    <li className='flex gap-3 font-bold items-center bg-gray-50 rounded px-5 py-2'>
                         {item.icon}
                         <span className=''>{item.name}</span>
                     </li>
