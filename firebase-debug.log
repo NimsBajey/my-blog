@@ -1,0 +1,103 @@
+[debug] [2024-09-03T00:45:24.416Z] ----------------------------------------------------------------------
+[debug] [2024-09-03T00:45:24.419Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\suwal\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-09-03T00:45:24.419Z] CLI Version:   13.16.0
+[debug] [2024-09-03T00:45:24.420Z] Platform:      win32
+[debug] [2024-09-03T00:45:24.420Z] Node Version:  v22.1.0
+[debug] [2024-09-03T00:45:24.420Z] Time:          Tue Sep 03 2024 06:30:24 GMT+0545 (Nepal Time)
+[debug] [2024-09-03T00:45:24.420Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-03T00:45:24.489Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-03T00:45:24.490Z] > authorizing via signed-in user (suwalumesh85@gmail.com)
+[debug] [2024-09-03T00:45:24.490Z] [iam] checking project umesh-blog for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-09-03T00:45:24.492Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/umesh-blog:testIamPermissions [none]
+[debug] [2024-09-03T00:45:24.492Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/umesh-blog:testIamPermissions x-goog-quota-user=projects/umesh-blog
+[debug] [2024-09-03T00:45:24.492Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/umesh-blog:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-09-03T00:45:24.962Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/umesh-blog:testIamPermissions 200
+[debug] [2024-09-03T00:45:24.962Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/umesh-blog:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-09-03T00:45:24.963Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/umesh-blog [none]
+[debug] [2024-09-03T00:45:25.461Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/umesh-blog 200
+[debug] [2024-09-03T00:45:25.461Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/umesh-blog {"projectId":"umesh-blog","projectNumber":"320165465232","displayName":"Blog App","name":"projects/umesh-blog","resources":{"hostingSite":"umesh-blog","storageBucket":"umesh-blog.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_b6a5dd14-2129-455e-a3bc-3a279688a103"}
+[debug] [2024-09-03T00:45:28.288Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/umesh-blog/sites pageToken=&pageSize=10
+[debug] [2024-09-03T00:45:29.380Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/umesh-blog/sites 200
+[debug] [2024-09-03T00:45:29.380Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/umesh-blog/sites {"sites":[{"name":"projects/umesh-blog/sites/umesh-blog","defaultUrl":"https://umesh-blog.web.app","appId":"1:320165465232:web:f0eb857515b00d3fc05c15","type":"DEFAULT_SITE"}]}
+[debug] [2024-09-03T00:45:29.380Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:320165465232:web:f0eb857515b00d3fc05c15/config [none]
+[debug] [2024-09-03T00:45:30.967Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:320165465232:web:f0eb857515b00d3fc05c15/config 200
+[debug] [2024-09-03T00:45:30.967Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:320165465232:web:f0eb857515b00d3fc05c15/config {"projectId":"umesh-blog","appId":"1:320165465232:web:f0eb857515b00d3fc05c15","storageBucket":"umesh-blog.appspot.com","locationId":"us-central","apiKey":"AIzaSyC7aE6focXRcjimGdQb7cgL1uzbMpf5bXY","authDomain":"umesh-blog.firebaseapp.com","messagingSenderId":"320165465232","measurementId":"G-35J9Z8W1T8"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-09-03T00:45:36.716Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/umesh-blog/sites/umesh-blog [none]
+[debug] [2024-09-03T00:45:37.649Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/umesh-blog/sites/umesh-blog 200
+[debug] [2024-09-03T00:45:37.649Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/umesh-blog/sites/umesh-blog {"name":"projects/umesh-blog/sites/umesh-blog","defaultUrl":"https://umesh-blog.web.app","appId":"1:320165465232:web:f0eb857515b00d3fc05c15","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.7
+
+[info]   - Environments: .env
+
+
+[info]    Creating an optimized production build ...
+
+[info] (node:4452) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[info] uncaughtException [Error: EPERM: operation not permitted, open 'D:\REACT\my-blog\.next\trace'] {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'D:\\REACT\\my-blog\\.next\\trace'
+}
+
+[debug] [2024-09-03T00:45:58.051Z] Error: ENOENT: no such file or directory, open 'D:\REACT\my-blog\.next\server\middleware-manifest.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-09-03T00:46:41.040Z] ----------------------------------------------------------------------
+[debug] [2024-09-03T00:46:41.042Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\suwal\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-09-03T00:46:41.043Z] CLI Version:   13.16.0
+[debug] [2024-09-03T00:46:41.043Z] Platform:      win32
+[debug] [2024-09-03T00:46:41.043Z] Node Version:  v22.1.0
+[debug] [2024-09-03T00:46:41.043Z] Time:          Tue Sep 03 2024 06:31:41 GMT+0545 (Nepal Time)
+[debug] [2024-09-03T00:46:41.043Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-03T00:46:41.109Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-03T00:46:41.109Z] > authorizing via signed-in user (suwalumesh85@gmail.com)
+[debug] [2024-09-03T00:46:41.109Z] [iam] checking project umesh-blog for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-09-03T00:46:41.111Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/umesh-blog:testIamPermissions [none]
+[debug] [2024-09-03T00:46:41.111Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/umesh-blog:testIamPermissions x-goog-quota-user=projects/umesh-blog
+[debug] [2024-09-03T00:46:41.111Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/umesh-blog:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-09-03T00:46:42.569Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/umesh-blog:testIamPermissions 200
+[debug] [2024-09-03T00:46:42.569Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/umesh-blog:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-09-03T00:46:42.570Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/umesh-blog [none]
+[debug] [2024-09-03T00:46:43.288Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/umesh-blog 200
+[debug] [2024-09-03T00:46:43.288Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/umesh-blog {"projectId":"umesh-blog","projectNumber":"320165465232","displayName":"Blog App","name":"projects/umesh-blog","resources":{"hostingSite":"umesh-blog","storageBucket":"umesh-blog.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_b6a5dd14-2129-455e-a3bc-3a279688a103"}
+[debug] [2024-09-03T00:46:45.440Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/umesh-blog/sites pageToken=&pageSize=10
+[debug] [2024-09-03T00:46:46.416Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/umesh-blog/sites 200
+[debug] [2024-09-03T00:46:46.416Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/umesh-blog/sites {"sites":[{"name":"projects/umesh-blog/sites/umesh-blog","defaultUrl":"https://umesh-blog.web.app","appId":"1:320165465232:web:f0eb857515b00d3fc05c15","type":"DEFAULT_SITE"}]}
+[debug] [2024-09-03T00:46:46.417Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:320165465232:web:f0eb857515b00d3fc05c15/config [none]
+[debug] [2024-09-03T00:46:48.337Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:320165465232:web:f0eb857515b00d3fc05c15/config 200
+[debug] [2024-09-03T00:46:48.337Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:320165465232:web:f0eb857515b00d3fc05c15/config {"projectId":"umesh-blog","appId":"1:320165465232:web:f0eb857515b00d3fc05c15","storageBucket":"umesh-blog.appspot.com","locationId":"us-central","apiKey":"AIzaSyC7aE6focXRcjimGdQb7cgL1uzbMpf5bXY","authDomain":"umesh-blog.firebaseapp.com","messagingSenderId":"320165465232","measurementId":"G-35J9Z8W1T8"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-09-03T00:46:53.979Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/umesh-blog/sites/umesh-blog [none]
+[debug] [2024-09-03T00:46:54.872Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/umesh-blog/sites/umesh-blog 200
+[debug] [2024-09-03T00:46:54.872Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/umesh-blog/sites/umesh-blog {"name":"projects/umesh-blog/sites/umesh-blog","defaultUrl":"https://umesh-blog.web.app","appId":"1:320165465232:web:f0eb857515b00d3fc05c15","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.7
+
+[info]   - Environments: .env
+
+

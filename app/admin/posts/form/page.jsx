@@ -72,7 +72,6 @@ export default function Page() {
                         className="px-4 py-2 rounded-full border bg-gray-50"
                         placeholder="Enter Post Slug"
                         type="text"
-                        disabled={updatePostId}
                         onChange={(e) => {
                             handleData('slug', e.target.value)
                         }}
