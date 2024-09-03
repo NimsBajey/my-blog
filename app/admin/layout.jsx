@@ -15,7 +15,7 @@ function InnerLayout({ children }) {
     const { data, error, isLoading } = useAdmin({ uid: user?.uid })
     if (authIsLoading || isLoading) {
         return (
-            <div aria-label="Loading..." role="status" class="flex items-center space-x-2">
+            <div aria-label="Loading..." role="status" class="flex items-center justify-center mt-24 md:mt-44 space-x-2">
                 <svg className="h-20 w-20 animate-spin stroke-gray-500" viewBox="0 0 256 256">
                     <line x1="128" y1="32" x2="128" y2="64" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
                     <line x1="195.9" y1="60.1" x2="173.3" y2="82.7" stroke-linecap="round" stroke-linejoin="round"
