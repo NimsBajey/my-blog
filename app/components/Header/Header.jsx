@@ -20,8 +20,8 @@ export const navigationItems = [
         icon: <List />,
     },
     {
-        name: 'Contact Us',
-        href: "/contact",
+        name: 'Contact Me',
+        href: "https://suwalumesh.com.np/",
         icon: <MessageCircle />,
     },
 ];
