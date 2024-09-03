@@ -54,7 +54,7 @@ export default function AuthorsListView() {
                         <td className="border px-4 py-2">{item?.email}</td>
                         <td className="border px-4 py-2">
                             <Link href={`/admin/authors/form?id=${item?.id}`}>
-                                <button className="bg-blue-300 font-semibold rounded-full px-5 py-2 text-sm">Edit</button>
+                                <button className="bg-blue-300 font-semibold rounded-md px-5 py-2 text-xs md:text-sm">Edit</button>
                             </Link>
                         </td>
                     </tr>
