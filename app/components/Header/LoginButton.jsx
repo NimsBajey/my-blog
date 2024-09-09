@@ -70,7 +70,7 @@ export default function LoginButton() {
                 </div>
             </button>
             {isOpen && (
-                <div className="origin-top-right absolute right-0 mt-48 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                <div className="origin-top-right z-100 absolute right-0 mt-48 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
                     <div className="py-2 px-2">
                         <div className="pb-2">
                             <Link
