@@ -34,7 +34,7 @@ export function PostCard({ post }) {
             <CategoryCard categoryId={post?.categoryId} />
           </div>
           <img
-            className="object-cover w-full h-48 sm:h-64 md:h-72 lg:h-44 group-hover:scale-105 transition-transform duration-500 ease-in-out rounded shadow-sm"
+            className="object-cover z-20 w-full h-48 sm:h-64 md:h-72 lg:h-44 group-hover:scale-105 transition-transform duration-500 ease-in-out rounded shadow-sm"
             src={post?.imageURL}
             alt="Image Description"
           />
